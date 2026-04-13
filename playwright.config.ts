@@ -67,7 +67,7 @@ export default defineConfig({
 
     {
       name:"FE-Login",
-      testMatch: 'FE/*.spec.ts',
+      testMatch: '**/FE/login.spec.ts',
       testDir: './src/FE',
     }
     
