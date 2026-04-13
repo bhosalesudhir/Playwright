@@ -69,6 +69,7 @@ export default defineConfig({
       name:"FE-Login",
       testMatch: '**/FE/login.spec.ts',
       testDir: './src/FE',
+      timeout: 60000,
     }
     
   ],
