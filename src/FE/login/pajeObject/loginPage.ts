@@ -10,9 +10,9 @@ export class LoginPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.usernameInput = page.locator('#username');
-        this.passwordInput = page.locator('#password');
-        this.loginButton = page.locator('#loginButton');
+        this.usernameInput = page.getByPlaceholder('Username');
+        this.passwordInput = page.getByPlaceholder('Password');
+        this.loginButton = page.getByText('Login');
     }
 
 
@@ -31,10 +31,10 @@ export class LoginPage {
     async loginToApp(username: string="", password: string="") {
 
         if (username === '')
-            username = envConfig.USERNAME;
+            username = envConfig.Username;
         await this.usernameInput.fill( username);
         if (password === '')
-                password = envConfig.PASSWORD;
+                password = envConfig.Password;
         await this.passwordInput.fill( password);
         
         await this.loginButton.click();
