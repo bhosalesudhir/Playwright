@@ -11,4 +11,3 @@ node_modules/
 # npm
 .npmrc
 package-lock.json
-.github
