@@ -9,8 +9,8 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4   //Clones your repository onto the GitHub Actions runner so your workflow can access its files
-    - uses: actions/setup-node@v4 // configures the specified version of Node.js on the runner.
+    - uses: actions/checkout@v4   
+    - uses: actions/setup-node@v4 
       with:
         node-version: lts/*
 
