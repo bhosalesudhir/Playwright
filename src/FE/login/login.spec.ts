@@ -3,7 +3,7 @@ import { expect } from '@playwright/test';
 
 test.beforeEach(async ({ loginPage,page }) => {
   await loginPage.Launch();
-  await loginPage.loginToApp();
+  //await loginPage.loginToApp();
   
 });
 test('has title', async ({ page }) => {

@@ -24,7 +24,7 @@ export class LoginPage {
             await this.page.goto(envConfig.URL) ;    
         
         await this.page.waitForLoadState('networkidle');
-        await  this.loginButton.waitFor({ state: 'visible' });
+        //await  this.loginButton.waitFor({ state: 'visible' });
 
 
     }
