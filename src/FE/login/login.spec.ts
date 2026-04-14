@@ -6,6 +6,7 @@ test.beforeEach(async ({ loginPage,page }) => {
   //await loginPage.loginToApp();
   
 });
+
 test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
